@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://rsbddoe61xw"]
 
-[ext_resource type="Script" uid="uid://dh0i0sjk12bl1" path="res://scene/player.gd" id="1_hjaqi"]
+[ext_resource type="Script" uid="uid://dhjeh20gtbowp" path="res://scene/player.gd" id="1_hjaqi"]
 [ext_resource type="Texture2D" uid="uid://dkga336x6xakk" path="res://Free Mushrooms-1/Mushroom_spike.png" id="1_xo3ru"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xo3ru"]
@@ -244,9 +244,11 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_aem61"]
-radius = 9.0
+radius = 7.0
 
 [node name="Player" type="CharacterBody2D" unique_id=919956538]
+position = Vector2(0, -14)
+collision_layer = 2
 script = ExtResource("1_hjaqi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1862421699]

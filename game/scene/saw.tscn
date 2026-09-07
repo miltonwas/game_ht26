@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dpneoe8m08cpl"]
+
+[ext_resource type="Texture2D" uid="uid://cg7k8eowqeu32" path="res://GrassLand/Props/GrassLand_Bush.png" id="1_gdafy"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_wthbu"]
+radius = 6.0
+
+[node name="Saw" type="Area2D" unique_id=1137171405]
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=152243445]
+texture = ExtResource("1_gdafy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=996806569]
+shape = SubResource("CircleShape2D_wthbu")

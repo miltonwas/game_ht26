@@ -3,6 +3,8 @@ extends Node2D
 @export var bpm: float = 120.0
 @export var hit_window: float = 0.15
 
+var tile_map_layer : TileMapLayer
+
 var beat_interval: float
 var start_time: float
 var last_beat_count: int = 0
